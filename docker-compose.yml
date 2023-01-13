@@ -1,8 +1,8 @@
-version: '3.9'
+version: '3.8'
 
 services:
   app:
-    build: 
+    build:
       context: .
       args:
         - DEV=true
@@ -20,7 +20,7 @@ services:
       - DB_USER=devuser
       - DB_PASS=devpass123
     depends_on:
-      - db 
+      - db
 
 
   db:
